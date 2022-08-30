@@ -5,12 +5,12 @@ terraform {
     }
   }
 }
-#provider "aws" {
-#  shared_credentials_files = ["/home/ec2-user/.aws/credentials"]
-#  profile    = "kgoddard"
-#}              
 provider "aws" {
-  region     = "us-west-2"
-  profile    = "default"
-}
+  shared_credentials_files = ["~/.aws/credentials"]
+  profile    = "ilab-kmg"
+}              
+#provider "aws" {
+#  region     = "us-west-2"
+#  profile    = "default"
+#}
 
