@@ -6,7 +6,7 @@ terraform {
   }
 }
 provider "aws" {
-  shared_credentials_files = ["~/.aws/credentials"]
+  shared_credentials_files = ["/home/ec2-user/.aws/credentials"]
   profile                  = "kmgoddard"
 }
 
