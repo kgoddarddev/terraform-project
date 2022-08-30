@@ -5,13 +5,13 @@ terraform {
     }
   }
 }
-provider "aws" {
-  shared_credentials_files = ["~/.aws/credentials"]
-  region     = "us-west-2"
-  profile    = "ilab"
-}              
 #provider "aws" {
+#  shared_credentials_files = ["~/.aws/credentials"]
 #  region     = "us-west-2"
-#  profile    = "default"
-#}
-
+#  profile    = "ilab"
+#}              
+provider "aws" {
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
+  region     = "us-west-2"
+}
