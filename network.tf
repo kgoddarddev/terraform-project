@@ -141,5 +141,5 @@ resource "aws_route_table" "ilab_prv_subnetb_rt" {
 resource "aws_route_table_association" "ilab_pri_sub_to_rtb" {
   count          = "1"
   route_table_id = aws_route_table.ilab_prv_subnetb_rt[count.index].id
-  subnet_id      = aws_subnet.ilab_subnet_priv_b.id
+  subnet_id      = aws_subnet.ilab_subnet_private_b.id
 }
