@@ -10,6 +10,6 @@ resource "aws_vpc" "imaginelabtf" {
 
 resource "aws_key_pair" "imaginelb_auth" {
   key_name   = "imagine-key"
-  public_key = file("imaginelbkey.pub")
+  public_key = file("/imaginelbkey.pub")
 }
 
