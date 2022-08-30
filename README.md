@@ -15,4 +15,4 @@
 ## Connectivity
 ###### Bastion Host (in public)
 
-![design](https://i.imgur.com/6PfYUXD.png)
+![design](https://i.imgur.com/pR3LpuK.png)
