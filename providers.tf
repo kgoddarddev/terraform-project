@@ -7,7 +7,8 @@ terraform {
 }
 provider "aws" {
   shared_credentials_files = ["~/.aws/credentials"]
-  profile    = ["ilab"]
+  region     = "us-west-2"
+  profile    = "ilab"
 }              
 #provider "aws" {
 #  region     = "us-west-2"
